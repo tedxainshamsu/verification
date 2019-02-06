@@ -79,6 +79,7 @@
             scanned.hidden = false;
             var decryptedBytes = CryptoJS.AES.decrypt(code.data, "HBK123");
             window.location.href = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            exit();
           } 
         }
         requestAnimationFrame(tick);
