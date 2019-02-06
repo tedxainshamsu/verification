@@ -1,29 +1,37 @@
-body {
-font-family: 'Ropa Sans', sans-serif;
-color: #333;
-max-width: 640px;
-margin: 0 auto;
-position: relative;
+html {
+    overflow-y: hidden;
 }
 
-h1 {
-margin: 10px 0;
-font-size: 40px;
+body {
+font-family: 'Ropa Sans', sans-serif;
+color: rgb(230, 43, 30);
+max-width: 50%;
+top: 10%;
+margin: 0 auto;
+position: relative;
+/* background: url(../images/x.png) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover; */
+background: url("../images/x.png");
 }
 
 #loadingMessage {
 text-align: center;
 padding: 40px;
-background-color: #eee;
+background-color: black;
 }
 
 #canvas {
 width: 100%;
+outline: black 3px solid;
 }
 
 #output {
+text-align: center;
 margin-top: 20px;
-background: #eee;
+background: black;
 padding: 10px;
 padding-bottom: 0;
 }
