@@ -10,10 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
 
   </head>
-  <body>
-    <h1>TEDxAinShamsU Ticket Scanner</h1>
-    
-    
+  <body>    
     <!-- Generate QR Code -->
 
     <!-- <div id="qrcode"></div>
@@ -80,6 +77,7 @@
             var decryptedBytes = CryptoJS.AES.decrypt(code.data, "HBK123");
             window.location.href = decryptedBytes.toString(CryptoJS.enc.Utf8);
             exit();
+            // When I didn't use exit(), the code continued execution after redirecting so it scanned the QR again, overidden the current redirection and thus running the php script at the server again and showing that the ticket was already scanned!
           } 
         }
         requestAnimationFrame(tick);
